@@ -1,5 +1,16 @@
 <template>
-  <NuxtRouteAnnouncer />
-  <NuxtLoadingIndicator />
-  <NuxtPage />
+  <div>
+    <header>
+      <SignedOut>
+        <SignInButton/>
+      </SignedOut>
+      <SignedIn>
+        <UserButton/>
+      </SignedIn>
+    </header>
+
+    <main>
+      <NuxtPage/>
+    </main>
+  </div>
 </template>
